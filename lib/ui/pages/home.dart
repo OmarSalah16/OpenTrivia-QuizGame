@@ -7,19 +7,20 @@ import 'package:auto_size_text/auto_size_text.dart';
 
 class HomePage extends StatelessWidget
 {
-  final List<Color> tileColors =
-  [
-    Colors.green,
-    Colors.blue,
-    Colors.purple,
-    Colors.pink,
-    Colors.indigo,
-    Colors.lightBlue,
-    Colors.amber,
-    Colors.deepOrange,
-    Colors.red,
-    Colors.brown
-  ];
+  // final List<Color> tileColors =
+  // [
+  //   Colors.green,
+  //   Colors.blue,
+  //   Colors.purple,
+  //   Colors.pink,
+  //   Colors.indigo,
+  //   Colors.lightBlue,
+  //   Colors.amber,
+  //   Colors.deepOrange,
+  //   Colors.red,
+  //   Colors.brown
+  // ];
+
 
   @override
   Widget build(BuildContext context)
@@ -48,12 +49,12 @@ class HomePage extends StatelessWidget
               title: const Text('App Introduction', style: TextStyle(fontSize: 20, color: Colors.indigo)),
               onTap: () {Navigator.pushReplacement(context,MaterialPageRoute(builder: (_) => IntroSliderPage() ) );},
             ),
-
+            
             ListTile
             (
-              title: const Text('Item 2', style: TextStyle(fontSize: 20, color: Colors.indigo)),
+              title: const Text('v1.0', style: TextStyle(fontSize: 20, color: Colors.indigo)),
               onTap: () {},
-            ),
+            )
           ],
         ),
       ),

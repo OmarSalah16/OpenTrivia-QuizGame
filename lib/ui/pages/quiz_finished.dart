@@ -40,7 +40,7 @@ class QuizFinishedPage extends StatelessWidget
     (
       appBar: AppBar
       (
-        title: Text('Results'),
+        title: const Text('Results'),
         elevation: 0,
       ),
       body: Container
@@ -54,7 +54,7 @@ class QuizFinishedPage extends StatelessWidget
             colors:
             [
               Theme.of(context).primaryColor,
-              Colors.green.shade300,
+              Colors.blue.shade200,
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter
@@ -119,19 +119,27 @@ class QuizFinishedPage extends StatelessWidget
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>
                 [
-                  RaisedButton
+                  ElevatedButton
                   (
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
-                    shape: RoundedRectangleBorder( borderRadius: BorderRadius.circular(10.0) ),
-                    color: Colors.indigo,
-                    child: const Text("Goto Home"),
+                    style: ElevatedButton.styleFrom
+                    (
+                      primary: Colors.green[700],
+                      elevation: 3,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                      padding: const EdgeInsets.all(20)
+                    ),
+                    child: const Text("Home Page"),
                     onPressed: () => Navigator.pop(context),
                   ),
-                  RaisedButton
+                  ElevatedButton
                   (
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20.0),
-                    shape: RoundedRectangleBorder( borderRadius: BorderRadius.circular(10.0) ),
-                    color: Colors.indigo,
+                    style: ElevatedButton.styleFrom
+                    (
+                      primary: Colors.red[700],
+                      elevation: 3,
+                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                      padding: const EdgeInsets.all(20)
+                    ),
                     child: const Text("Check Answers"),
                     onPressed: ()
                     {

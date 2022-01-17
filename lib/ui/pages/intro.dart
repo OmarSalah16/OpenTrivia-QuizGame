@@ -12,7 +12,7 @@ class IntroSliderPage extends StatefulWidget
 
 class _IntroSliderPageState extends State<IntroSliderPage>
 {
-  List<Slide> slides = List();
+  List<Slide> slides = [];
   @override
   void initState()
   {
@@ -24,7 +24,7 @@ class _IntroSliderPageState extends State<IntroSliderPage>
         title: "Welcome to OpenTrivia",
         description: "",
         pathImage: "assets/images/otdb.png",
-      ),
+      )
     );
 
     slides.add
@@ -34,7 +34,7 @@ class _IntroSliderPageState extends State<IntroSliderPage>
         title: "OpenTrivia Database",
         description: "OpenTrivia is an online database that stores questions of different categories & difficulties.",
         pathImage: "assets/images/otdb.png",
-      ),
+      )
     );
 
     slides.add
@@ -44,7 +44,7 @@ class _IntroSliderPageState extends State<IntroSliderPage>
         title: "Categories",
         description: "There are over 20 Categories of different questions in OpenTrivia DB.",
         pathImage: "assets/images/otdb.png",
-      ),
+      )
     );
 
     slides.add
@@ -58,8 +58,9 @@ class _IntroSliderPageState extends State<IntroSliderPage>
     );
   }
 
-  List<Widget> renderListCustomTabs() {
-    List<Widget> tabs = List();
+  List<Widget> renderListCustomTabs()
+  {
+    List<Widget> tabs = [];
     for (int i = 0; i < slides.length; i++)
     {
       Slide currentSlide = slides[i];

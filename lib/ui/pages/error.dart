@@ -28,7 +28,7 @@ class ErrorPage extends StatelessWidget
             colors:
             [
               Theme.of(context).primaryColor,
-              // Theme.of(context).accentColor
+              Colors.red[500]
             ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter
@@ -62,7 +62,6 @@ class ErrorPage extends StatelessWidget
 
                     const SizedBox(height: 20.0),
 
-                    //Raised Button
                     ElevatedButton
                     (
                       child: const Text("Try Again"),

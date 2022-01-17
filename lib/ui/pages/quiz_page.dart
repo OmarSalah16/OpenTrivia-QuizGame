@@ -158,7 +158,8 @@ class _QuizPageState extends State<QuizPage>
   {
     if (_answers[_currentIndex] == null)
     {
-      _key.currentState.showSnackBar(SnackBar(content: Text("You must select an answer to continue.") ) );
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("You must select an answer to continue.")));
+      //_key.currentState.showSnackBar(SnackBar(content: Text("You must select an answer to continue.") ) );
       return;
     }
 
